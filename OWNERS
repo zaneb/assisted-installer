@@ -8,7 +8,7 @@ filters:
       - emeritus_approvers
     reviewers:
       - code-approvers
-  ^Dockerfile\..*:
+  ^Dockerfile\.[^.]*(?!\.ocp):
     labels:
       - downstream-change-needed
 
